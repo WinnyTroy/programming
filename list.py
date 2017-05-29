@@ -64,6 +64,35 @@ def display():
 display()
 
 
+board = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+
+a = '	|	|'
+b = '    -----------------'
+
+
+def show():
+    #     for i in range(9):
+    #         for a in range(3):
+    #             print list[i * 3 + a]
+
+    print a
+    print b
+    print a
+    print b
+    print a
+
+# def show():
+#     print('   a   a')
+#     print('bbbbbbbbbbb')
+#     print('   a   a')
+#     print('bbbbbbbbbbb')
+#     print('   a   a')
+
+
+show()
+
+
 board = []
 for i in range(9):
     board.append(-1)
@@ -98,3 +127,28 @@ def drawBoard(a_list):
 drawBoard(a_list)
 
 
+a = '   |   |'
+b = '-----------'
+
+
+def show():
+    print a
+    print b
+    print a
+    print b
+    print a
+
+show()
+
+
+def ui():
+    f_name = raw_input('Enter your first name: ')
+    l_name = raw_input('Enter your last name: ')
+    print('Enter your D.O.B:')
+    mo = raw_input("Month: ")
+    day = raw_input("Day: ")
+    year = raw_input("Year: ")
+    print f_name, l_name, "was born on " + mo, day, year
+
+
+ui()
