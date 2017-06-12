@@ -96,3 +96,19 @@ while player == False:
     computer = t[randint(0, 2)]
 
 
+def ball_collide(ball_1, ball_2):
+    x1, y1, r1 = ball_1
+    x2, y2, r2 = ball_2
+    distance = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+    radiisum = r1 + r2
+    if (distance <= radiisum):
+        print "True"
+    else:
+        print "False"
+
+
+ball_collide((0, 0, 1), (3, 3, 1))
+
+
+
+
