@@ -110,5 +110,7 @@ def ball_collide(ball_1, ball_2):
 ball_collide((0, 0, 1), (3, 3, 1))
 
 
-
-
+for i in "hello":
+    print i
+for i in ["a", True, 123]:
+    print i
